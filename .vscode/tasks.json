@@ -16,7 +16,7 @@
                 "-L/opt/boost/gcc/lib",
                 "-I${workspaceFolder}/ac-library",
                 "-o",
-                "'${workspaceFolder}/o'",
+                "'${workspaceFolder}/a'",
                 "'${file}'",
             ],
             "group": {
