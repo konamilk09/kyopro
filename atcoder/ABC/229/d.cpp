@@ -29,6 +29,7 @@ int main() {
             r++;
         }
         ans = max(ans, r-l);
+        // 上のところでr++されているからここではr-lでおっけ。r-l+1ではない。
     }
 
     cout << ans << endl;
