@@ -12,7 +12,18 @@ int main() {
     // numx[i][]で数字iがどの場所にあるか。
     rep(i,n) {
         cin >> a[i];
-        numx[a[i]];
+        a[i]--;
+        numx[a[i]].push_back(i);
+    }
+
+    cin >> q;
+    rep(i,q) {
+        int l, r, x;
+        cin >> l >> r >> x;
+        l--; r--; x--;
+        auto f = lower_bound(numx[x].begin(), numx[x].end(), l);
+        auto b = upper_bound(numx[x].begin(), numx[x].end(), r);
+        cout << b-f << endl;
     }
     
     return 0;
