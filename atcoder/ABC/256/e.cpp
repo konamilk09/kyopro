@@ -8,9 +8,11 @@ using namespace std;
 using ll = long long;
 
 int main() {
-  int n;
-  cin >> n;
-  int ans = 0;
-  cout << ans << endl;
-  return 0;
+    int n;
+    cin >> n;
+    
+    int ans = 0;
+
+    cout << ans << endl;
+    return 0;
 }
